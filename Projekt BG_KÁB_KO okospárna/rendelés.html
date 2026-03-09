@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="rendeles.css">
+    <script defer src="okosparna.js"></script>
+    <title>DreamSmartX Rendelés</title>
+</head>
+<body>
+
+<header class="navbar">
+
+        <div class="logo">
+            <img src="képek/image-wm.png" alt="">
+            <span>DreamSmartX</span>
+        </div>
+
+<div class="menu-btn" id="menuBtn">☰</div>
+
+</header>
+
+<div class="menu-bar" id="navMenu">
+
+    <nav class="nav-links">
+         <a href="Okospárna.html">Főoldal</a> 
+    </nav>
+</div>
+
+
+<h3 id="rendelesfocim">Rendelés</h3>
+<div class="container">
+    <form id="urlap">
+        <div class="urlapreszek">
+        <label>Vezetéknév:</label>
+        <input type="text" required>
+        <label>Keresztnév:</label>
+        <input type="text" required>
+        <label>Nem</label>
+        <select id="product" required>
+            <option value="férfi">férfi</option>
+            <option value="nő">nő</option>
+        </select>
+        <label>Születési dátum</label>
+        <input type="date">
+        </div>
+        <div class="urlapreszek">
+        <label>Telefonszám:</label>
+        <input type="number" required value="+36 ">
+        <label>Email:</label>
+        <input type="email" required>
+        </div>
+        <div class="urlapreszek">
+        <label>Méret</label>
+        <select id="product" required>
+            <option value="kicsi">kicsi</option>
+            <option value="közepes">közepes</option>
+            <option value="nagy">nagy</option>
+        </select>
+        <label>Mennyiség:</label>
+        <input type="number" min="1" value="1">
+        </div>
+        <div class="urlapreszek">
+        <label>Írányítószám</label>
+        <input type="text" required>
+        <label>Település</label>
+        <input type="text" required>
+        <label>Közterület neve</label>
+        <input type="text" required>
+        <label>Házszám</label>
+        <input type="text" required>
+        <label>Emelet</label>
+        <input type="number">
+        <label>Ajtó</label>
+        <input type="number">
+        </div>
+
+        <div class="urlapreszek">
+            <h4>Fizetés módja</h4>
+            <input type="radio">Átutalás
+            <input type="radio">Utánvét
+            <input type="radio">PayPal
+        </div>
+
+        <button type="submit" id="bekuldes">Rendelés elküldése</button>
+</div>
+
+</form>
+</body>
+</html>
