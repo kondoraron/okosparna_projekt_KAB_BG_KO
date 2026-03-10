@@ -8,8 +8,18 @@ body{
     margin:auto;
     background-size: 1em;
     font-family: "Segoe UI", Arial, sans-serif;
-    background:black;
+    height: 100vh;
+    background: linear-gradient(-45deg, #222, #333, #444, #555);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
 }
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
 
 h1{
     position: relative;    
@@ -166,8 +176,8 @@ h1{
 .hero-content{
     text-align:center;
     padding:0 20%;
+    font-size: 50px;
 }
-
 .hero-content h1{
     font-size:60px;
     margin-bottom: 20px;
@@ -190,10 +200,11 @@ h1{
 
 .slider{
     position: relative;
-    width: 1030px;
-    height: 400px;
+    width: 800px;
+    height: 550px;
     overflow: hidden;
     margin: auto;
+    border-radius: 20px;
 }
 .slides{
     position: relative;
@@ -264,7 +275,7 @@ section{
 }
 
 .section-title{
-    font-size:40px;
+    font-size:50px;
     margin-bottom:40px;
     text-align:center;
     color: white;
@@ -309,7 +320,9 @@ button:hover{
 
 .order{
     text-align:center;
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    background: linear-gradient(-45deg, darkblue, blue, #0f8ef5, #2f8ef5);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
     color:white;
     border-radius:20px;
     padding:80px 40px;
@@ -343,7 +356,7 @@ footer{
     color:white;
     margin-top:40px;
     margin-bottom: -150px;
-    background-color: rgb(10, 30, 100);
+    background-color: black
 }
 
 
