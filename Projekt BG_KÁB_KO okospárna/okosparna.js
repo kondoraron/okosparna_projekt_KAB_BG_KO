@@ -73,3 +73,10 @@ function nextSlide() {
 }
 
 setInterval(nextSlide, 3000);
+
+
+
+
+document.getElementById("bekuldes").onclick = function() {
+  alert("✅ A rendelését sikeresen fogadtuk. Köszönjük, hogy nálunk vásárolt!");
+}

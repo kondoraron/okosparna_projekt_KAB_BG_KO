@@ -8,8 +8,16 @@ body{
     margin:auto;
     background-size: 1em;
     font-family: "Segoe UI", Arial, sans-serif;
-    background:black;
+    background: darkkhaki;
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
 }
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 
 h1{
     position: relative;    
@@ -22,6 +30,10 @@ h1{
     margin-bottom: -75px;
 }
 
+h3{
+    padding: 50px;
+    color: darkkhaki;
+}
 
 .navbar{
     position:fixed;
@@ -34,6 +46,7 @@ h1{
     background:linear-gradient(90deg,#1c1c1c,#2a2a2a);
     backdrop-filter:blur(10px);
     border-bottom:1px solid #333;
+    background: transparent;
 }
 .navbar.hidden{
     display:none;
@@ -46,12 +59,13 @@ h1{
     justify-content:center;
     gap:30px;
     transition: 0.3s;
+    
 }
 .nav-links a{
     position: relative;
     margin-left: auto;
-    color: darkgrey;
-    font-size: 20px;
+    color: white;
+    font-size: 30px;
     font-weight: 500;
     text-decoration: none;
     transition:0.25s;
@@ -103,6 +117,7 @@ h1{
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
+    background: transparent;
 }
 .menu-bar.open{
     max-height: 100px;
@@ -120,6 +135,7 @@ h1{
     font-size:22px;
     font-weight:600;
     letter-spacing:1px;
+    margin-top: 30px;
 }
 
 
@@ -214,8 +230,10 @@ button{
     border-radius:25px;
     background:white;
     color:black;
-    font-size:16px;
+    font-size:30px;
     cursor:pointer;
+    margin-left: 500px;
+    padding: 30px;
 }
 
 button:hover{
@@ -287,6 +305,7 @@ input, select{
 
 .urlapreszek{
     margin-bottom: 50px;
+    cursor: pointer;
 }
 
 #rendelesfocim{
