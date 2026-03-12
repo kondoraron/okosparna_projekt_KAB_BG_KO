@@ -78,10 +78,26 @@
 
         <div class="urlapreszek">
             <h4>Fizetés módja</h4>
-            <input type="checkbox">Átutalás
-            <input type="checkbox">Utánvét
-            <input type="checkbox">PayPal
+            <label style="display: flex; gap: -1000px;">
+                <span>Utalás</span>
+            <input style="margin-left: -588px;" type="checkbox" class="csakegy">
+            </label>
+            <label style="display: flex; gap: -1000px;">
+                <span>Utánvét</span>
+            <input style="margin-left: -600px;" type="checkbox" class="csakegy">
+            </label>
+            <label style="display: flex; gap: 60px;">
+                <span>Paypal</span>
+            <input style="margin-left: -652px;" type="checkbox" class="csakegy">
+            </label>
         </div>
+
+
+        <div class="urlapreszek">
+            <label>Megjegyzés</label>
+            <input type="text">
+        </div>
+
 
         <button type="submit" id="bekuldes">Rendelés elküldése</button>
 </div>

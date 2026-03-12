@@ -8,7 +8,7 @@ body{
     margin:auto;
     background-size: 1em;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: darkkhaki;
+    background: beige;
     background-size: 400% 400%;
     animation: gradientMove 12s ease infinite;
 }
@@ -19,20 +19,11 @@ body{
 }
 
 
-h1{
-    position: relative;    
-    top: -75px;
-    color: rgb(28, 36, 53);
-    padding: 15px 25px;
-    background-color: white;
-    width:500px;
-    border-radius: 0 35px 35px 0;
-    margin-bottom: -75px;
-}
+
 
 h3{
     padding: 50px;
-    color: darkkhaki;
+    color: beige;
 }
 
 .navbar{
@@ -64,7 +55,7 @@ h3{
 .nav-links a{
     position: relative;
     margin-left: auto;
-    color: white;
+    color: black;
     font-size: 30px;
     font-weight: 500;
     text-decoration: none;
@@ -87,7 +78,7 @@ h3{
 }
 
 .nav-links a:hover{
-    color:white;
+    color:blue;
 }
 .nav-links a:hover::after{
     width:100%;
@@ -131,7 +122,7 @@ h3{
     gap: 12px;
 }
 .logo span{
-    color:white;
+    color:black;
     font-size:22px;
     font-weight:600;
     letter-spacing:1px;
@@ -228,8 +219,8 @@ button{
     padding:12px 30px;
     border:none;
     border-radius:25px;
-    background:white;
-    color:black;
+    background:blue;
+    color:white;
     font-size:30px;
     cursor:pointer;
     margin-left: 500px;
@@ -241,33 +232,6 @@ button:hover{
 }
 
 
-.order{
-    text-align:center;
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:white;
-    border-radius:20px;
-    padding:80px 40px;
-}
-.order h2{
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-.order button{
-    margin-top:30px;
-    padding:15px 50px;
-    font-size:20px;
-    border:none;
-    border-radius:30px;
-    background:#00c3ff;
-    color:white;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.order button:hover{
-    transform:scale(1.08);
-}
 
 
 

@@ -386,35 +386,3 @@ footer{
     background-color: black
 }
 
-
-
-
-
-
-
-label{
-    display:block;
-    margin-top:10px;
-}
-
-
-
-input, select{
-    width:100%;
-    padding:8px;
-    margin-top:5px;
-}
-
-#urlap{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.urlapreszek{
-    margin-bottom: 50px;
-}
-
-#rendelesfocim{
-    text-align: center;
-    padding-top: 30px;
-}

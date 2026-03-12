@@ -80,3 +80,26 @@ setInterval(nextSlide, 3000);
 document.getElementById("bekuldes").onclick = function() {
   alert("✅ A rendelését sikeresen fogadtuk. Köszönjük, hogy nálunk vásárolt!");
 }
+
+
+
+const checkboxes = document.querySelectorAll('.csakegy');
+
+checkboxes.forEach(cb => {
+  cb.addEventListener('change', () => {
+    checkboxes.forEach(other => {
+      if (other !== cb) other.checked = false;
+    });
+  });
+});
+
+
+
+function nagyitas(elem) {
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("modalKep").src = elem.src;
+}
+
+function bezaras() {
+  document.getElementById("modal").style.display = "none";
+}
