@@ -7,7 +7,7 @@
 body{
     margin:auto;
     background-size: 1em;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
     background: linear-gradient(-45deg, #222, #333, #444, #555);
     background-size: 400% 400%;
@@ -32,6 +32,11 @@ h1{
     margin-bottom: -75px;
 }
 
+h2{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
 
 .navbar{
     position:fixed;
@@ -255,6 +260,11 @@ h1{
 .ismertetok{
     max-width: 1030px;
     margin:auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    gap: 50px;
 }
 
 .ismertetok p{
@@ -296,25 +306,25 @@ section{
     background-color: lightblue;
 }
 .card.horkolas{
-    background-color: plum;
+    background-color: rgb(245, 245, 221);
 }
 .card.homerseklet{
-    background-color: darksalmon;
+    background-color: rgb(235, 235, 161) ;
 }
 .card.hangok{
-    background-color: lightgreen;
+    background-color: rgb(171, 219, 171);
 }
 .card.mobil{
-    background-color: burlywood;
+    background-color: rgb(245, 218, 183);
 }
 .card.ebresztes{
-    background-color: darkkhaki;
+    background-color: rgb(247, 240, 149);
 }
 .card.relax{
-    background-color: aquamarine;
+    background-color: rgb(197, 255, 236);
 }
 .card.feny{
-    background-color: khaki;
+    background-color: rgb(239, 234, 190);
 }
 
 .card:hover{
@@ -329,6 +339,39 @@ section{
 .card p{
     color: grey;
 }
+
+
+.osszehasonlitas{
+    width: 900px;
+    font-size: 20px;
+    margin: 120px 0;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.tablas{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    margin-top: 350px;
+    margin-bottom: 150px;
+}
+.osszehasonlitas th, .osszehasonlitas.td{
+    border: 1px solid #ccc;
+    padding: 16px 20px;
+    text-align: center;
+}
+.osszehasonlitas th{
+    background: #6fa3b5;
+    color: #333;
+    font-size: 40px;
+    font-weight: bold;
+}
+.osszehasonlitas tr{
+    font-size: 25px;
+}
+
+
 button{
     margin-top:30px;
     padding:12px 30px;
@@ -347,9 +390,7 @@ button:hover{
 
 .order{
     text-align:center;
-    background: linear-gradient(-45deg, darkblue, blue, #0f8ef5, #2f8ef5);
     background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
     color:white;
     border-radius:20px;
     padding:80px 40px;
@@ -362,7 +403,7 @@ button:hover{
 .order button{
     margin-top:30px;
     padding:15px 50px;
-    font-size:20px;
+    font-size:40px;
     border:none;
     border-radius:30px;
     background:#00c3ff;
