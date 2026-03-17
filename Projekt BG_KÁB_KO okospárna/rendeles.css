@@ -8,7 +8,7 @@ body{
     margin:auto;
     background-size: 1em;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: beige;
+    background: rgb(185, 185, 159);
     background-size: 400% 400%;
     animation: gradientMove 12s ease infinite;
 }
@@ -23,7 +23,7 @@ body{
 
 h3{
     padding: 50px;
-    color: beige;
+    color: rgb(131, 131, 102);
 }
 
 .navbar{

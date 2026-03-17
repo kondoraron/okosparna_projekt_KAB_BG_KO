@@ -5,7 +5,7 @@
 
 
 body{
-    margin:auto;
+    margin: 0;
     background-size: 1em;
     font-family: 'Poppins', sans-serif;
     height: 100vh;
@@ -342,23 +342,30 @@ section{
 
 
 .osszehasonlitas{
-    width: 900px;
+    width: 100%;
     font-size: 20px;
     margin: 120px 0;
-    border-collapse: collapse;
+    margin-left: 100px;
+    transform: translateX(-112px);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-collapse: separate;
     border-radius: 12px;
     overflow: hidden;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+    border-spacing: 0 8px;
 }
 .tablas{
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
     color: white;
     margin-top: 350px;
     margin-bottom: 150px;
 }
-.osszehasonlitas th, .osszehasonlitas.td{
-    border: 1px solid #ccc;
-    padding: 16px 20px;
+.osszehasonlitas th, .osszehasonlitas td, .osszehasonlitas table{
+    border: 2px solid #ccc;
+    padding: 10px 20px;
     text-align: center;
 }
 .osszehasonlitas th{
@@ -366,9 +373,33 @@ section{
     color: #333;
     font-size: 40px;
     font-weight: bold;
+    letter-spacing: 1px;
+    padding: 14px;
+    text-transform: uppercase;
+}
+.osszehasonlitas td{
+    color: #333;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 14px;
+}
+.osszehasonlitas th:hover{
+    background-color: lightblue;
+    transition: 0.2s;
 }
 .osszehasonlitas tr{
     font-size: 25px;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+.osszehasonlitas tr:hover{
+    background-color: lightgrey;
+    transform: scale(1.01);
+}
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
 }
 
 
@@ -397,9 +428,12 @@ button:hover{
 }
 .order h2{
     font-size:42px;
-    margin-bottom:20px;
+    margin-bottom:-100px;
+    margin-top: 200px;
 }
-
+.order p{
+    padding-top: 120px;
+}
 .order button{
     margin-top:30px;
     padding:15px 50px;
