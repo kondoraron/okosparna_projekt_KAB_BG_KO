@@ -1,0 +1,463 @@
+.logo-meret{
+    width: 200px;
+    height: 200px;
+}
+
+
+body{
+    margin:0;
+    background-size: 1em;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(-45deg, #222, #333, #444, #555);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+}
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+h1{
+    position: relative;    
+    top: -75px;
+    color: rgb(28, 36, 53);
+    padding: 15px 25px;
+    background-color: white;
+    width:500px;
+    border-radius: 0 35px 35px 0;
+    margin-bottom: -75px;
+}
+
+h2{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
+
+.navbar{
+    position:fixed;
+    display:flex;
+    width: 100%;
+    top: 0;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 30px;
+    background:linear-gradient(90deg,#1c1c1c,#2a2a2a);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid #333;
+    background: transparent;
+}
+.navbar.hidden{
+    display:none;
+}
+.nav-links{
+    list-style:none;
+    margin:5px;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    transition: 0.3s;
+}
+.nav-links a{
+    position: relative;
+    margin-left: auto;
+    color: darkgrey;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition:0.25s;
+    padding:6px 100px;
+    border-radius:6px;
+    letter-spacing: 0.5px;
+    transition:color 0.25s;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:0%;
+    height:2px;
+    background:#4da6ff;
+    transition:0.25s ease;
+}
+
+.nav-links a:hover{
+    color:white;
+}
+.nav-links a:hover::after{
+    width:100%;
+}
+.nav-links a.active{
+    color:white;
+}
+.nav-links a.active::after{
+    width:100%;
+}
+
+.menu-btn{
+    display:block;
+    color:darkgrey;
+    font-size: 26px;
+    cursor: pointer;
+}
+.menu-btn:hover{
+    color: white;
+}
+
+.menu-bar{
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    background: #1c1c1c;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background: transparent;
+}
+.menu-bar.open{
+    max-height: 100px;
+}
+
+.logo{
+    height: 100px;
+    width: 140px;
+    display: flex;
+    text-align: center;
+    gap: 12px;
+}
+.logo span{
+    color:white;
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-top: 30px;
+}
+
+.hero{
+    height:100vh;
+    background-image:
+    linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.9)),
+    url("képek/háttér.jpeg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    background-attachment:fixed;
+}
+
+
+@keyframes slowZoom{
+    0%{
+    background-size:100%;
+    }
+    100%{
+    background-size:110%;
+    }
+}
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background:radial-gradient(circle at center,
+    rgba(10,15,100,0.5),
+    transparent 60%);
+
+    pointer-events:none;
+}
+
+.hero-content{
+    text-align:center;
+    padding:0 20%;
+    font-size: 50px;
+}
+.hero-content h1{
+    font-size:60px;
+    margin-bottom: 20px;
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:1.6;
+}
+.story{
+    font-size:18px;
+    line-height:1.7;
+    max-width:900px;
+    margin:auto;
+    color:white;
+    text-align: center;
+}
+
+
+
+.slider{
+    position: relative;
+    width: 800px;
+    height: 550px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+}
+.slides{
+    position: relative;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.slide.active{
+    display: block;
+}
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.prev{
+    left: 10px;
+}
+.next{
+    right: 10px;
+}
+.prev:hover, .next:hover{
+    background: rgba(0,0,0,0.8);
+}
+
+
+
+
+
+#okospárna{
+    width: 500px;
+    margin-left: 250px;
+}
+
+.ismertetok{
+    max-width: 1030px;
+    margin:auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    gap: 50px;
+}
+
+.ismertetok p{
+    font-size: 120%;
+    text-align: justify;
+    margin-top: 20px;
+    color:white;
+}
+
+
+.funkciok{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+section{
+    padding:120px 12%;
+}
+
+.section-title{
+    font-size:50px;
+    margin-bottom:40px;
+    text-align:center;
+    color: white;
+}
+
+
+.card{
+    background:#f5f7fa;
+    padding: 28px 32px;
+    border-radius:15px;
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    border: 1px solid #ECEEF2;
+}
+
+.card.alvas{
+    background-color: lightblue;
+}
+.card.horkolas{
+    background-color: rgb(245, 245, 221);
+}
+.card.homerseklet{
+    background-color: rgb(235, 235, 161) ;
+}
+.card.hangok{
+    background-color: rgb(171, 219, 171);
+}
+.card.mobil{
+    background-color: rgb(245, 218, 183);
+}
+.card.ebresztes{
+    background-color: rgb(247, 240, 149);
+}
+.card.relax{
+    background-color: rgb(197, 255, 236);
+}
+.card.feny{
+    background-color: rgb(239, 234, 190);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#444;
+}
+.card p{
+    color: grey;
+}
+
+
+.osszehasonlitas{
+    width: 100%;
+    font-size: 20px;
+    margin: 120px 0;
+    margin-left: 100px;
+    transform: translateX(-112px);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-collapse: separate;
+    border-radius: 12px;
+    overflow: hidden;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+    border-spacing: 0 8px;
+}
+.tablas{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    margin-top: 350px;
+    margin-bottom: 150px;
+}
+.osszehasonlitas th, .osszehasonlitas.td{
+    border: 2px solid #ccc;
+    padding: 10px 20px;
+    text-align: center;
+}
+.osszehasonlitas th{
+    background: #6fa3b5;
+    color: #333;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 14px;
+    text-transform: uppercase;
+}
+.osszehasonlitas td{
+    color: #333;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 14px;
+}
+.osszehasonlitas th:hover{
+    background-color: lightblue;
+    transition: 0.2s;
+}
+.osszehasonlitas tr{
+    font-size: 25px;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+}
+.osszehasonlitas tr:hover{
+    background-color: lightgrey;
+    transform: scale(1.01);
+}
+@media screen and (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+
+
+button{
+    margin-top:30px;
+    padding:12px 30px;
+    border:none;
+    border-radius:25px;
+    background:white;
+    color:black;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2f8ef5;
+}
+
+
+.order{
+    text-align:center;
+    background: linear-gradient(-45deg, darkblue, blue, #0f8ef5, #2f8ef5);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
+    color:white;
+    border-radius:20px;
+    padding:80px 40px;
+}
+.order h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.order button{
+    margin-top:30px;
+    padding:15px 50px;
+    font-size:40px;
+    border:none;
+    border-radius:30px;
+    background:#00c3ff;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.order button:hover{
+    transform:scale(1.08);
+}
+
+
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:white;
+    margin-top:40px;
+    margin-bottom: -150px;
+    background-color: black
+}
+

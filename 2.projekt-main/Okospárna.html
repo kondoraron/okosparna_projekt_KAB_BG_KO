@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Okospárna.css">
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script defer src="bootstrap/js/popper.min.js"></script>
+    <script defer src="bootstrap/js/bootstrap.min.js"></script>
+    <script defer src="okosparna.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <title>A DreamSmartX</title>
+</head>
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        <img src="képek/logo.png" alt="">
+        <span>DreamSmartX</span>
+    </div>
+
+<div class="menu-btn" id="menuBtn">☰</div>
+
+    </header>
+
+
+<div class="menu-bar" id="navMenu">
+
+  <nav class="nav-links">
+        <a href="#tortenet" class="active">Története</a> 
+        <a href="#mi">Termék</a> 
+        <a href="#funkcio">Funkciói</a>  
+        <a href="#ossz">Összehasonlítás</a>
+        <a href="#rendeles">Rendelés</a>
+  </nav>
+
+</div>
+
+
+
+<section class="hero" id="tortenet">
+<div class="story">
+<h2 class="hero-content">A DreamSmartX története</h2>
+
+<p>
+A DreamSmartX ötlete abból született, hogy egyre több ember
+küzd rossz alvással és stresszel. Egy fiatal fejlesztőcsapat
+olyan párnát akart létrehozni, amely figyeli az alvást,
+javítja a testtartást és segít mélyebben pihenni.
+</p>
+
+<p>
+Több év kutatás és fejlesztés után megszületett a DreamSmartX,
+egy intelligens okospárna, amely mesterséges intelligenciát
+használ az alvás optimalizálására.
+</p>
+</div>
+</section>
+
+
+
+<section id="mi">
+        <div class="media-body ismertetok">
+          <h3 class="section-title"> Mi az a DreamSmartX</h3>
+
+            <div class="slider">
+
+              <img src="képek/képlapozó1.webp" class="slide active" alt="Termék" onclick="nagyitas(this)" style="width:1000px;cursor:pointer;">
+              <img src="képek/képlapozó2.jpg" class="slide" alt="Termék" onclick="nagyitas(this)" style="width:1000px;cursor:pointer;">
+              <img src="képek/képlapozó3.png" class="slide" alt="Termék" onclick="nagyitas(this)" style="width:1000px;cursor:pointer;">
+              <img src="képek/képlapozó4.png" class="slide" alt="Termék" onclick="nagyitas(this)" style="width:1000px;cursor:pointer;">
+
+              <div id="modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.8);z-index:1000;">
+              <span onclick="bezaras()" style="position:absolute;top:20px;right:30px;font-size:30px;color:white;cursor:pointer;">&times;</span>
+               <img id="modalKep" style="margin:auto;display:block;max-width:90%;max-height:90%;position:absolute;top:0;bottom:0;left:0;right:0;">
+              </div>
+              
+            </div>
+            
+          
+          <p>
+            A DreamSmartX <i>(okos párna)</i> olyan technológiailag továbbfejlesztett alvási kiegészítő, amely beépített érzékelőkkel, mikrochipekkel és vezeték nélküli kapcsolatok <i>segítségével</i> monitorozza és javítja az alvás minőségét.A DreamSmartX ideális azoknak, akik horkolnak, alvászavarokkal küzdenek, vagy szeretnék részletesen elemezni és javítani alvási szokásaikat.Nem véletlenül hívják okos párnának. Ahhoz, hogy teljes legyen az élvezet, először le kell tölteni hozzá egy applikációt, de lehet használni applikáció nélkül is.
+          </p>
+          <h3> <small><i></i></small></h3>
+          <img src="" alt="" title="" class="mt-2 termekkep">
+          <p>
+  
+          </p>
+        </div>
+
+</section>
+
+<section id="funkcio">
+
+<h2 class="section-title">Funkciók</h2>
+
+<div class="funkciok">
+
+<div class="card alvas">
+<h3>😴 Alvasfigyelés</h3>
+<p>Beépített érzékelők figyelik az alvási ciklusokat és részletes alvásstatisztikát készítenek.</p>
+</div>
+
+<div class="card horkolas">
+<h3>💤 Hórkólás érzékelés</h3>
+<p>A párna autómatikusan érzékeli a horkolást és finoman módosítja a pozíciót a nyugodtabb alvásért.</p>
+</div>
+
+<div class="card homerseklet">
+<h3>🌡 Hőmérséklet szabályozás</h3>
+<p>Grafén fűtőlap és intelligens hűtőventilátor biztosítja az ideális hőmérsékletet.</p>
+</div>
+
+<div class="card hangok">
+<h3>🎵 Nyugtató hangok</h3>
+<p>Nyugtató zenét, fehér zajt vagy hangoskönyvet hallgathatsz közvetlenül a párnából.</p>
+</div>
+
+<div class="card mobil">
+<h3>📱 Mobil applikácio</h3>
+<p>Nyomásérzékelők és alvásmonitorozás segít megérteni az alvási szokásaidat.</p>
+</div>
+
+<div class="card ebresztes">
+<h3>🌙 Intelligens LED fény</h3>
+<p>Beépített LED fénygyűrű és fénygomb segít az éjszakai használatban.</p>
+</div>
+
+<div class="card relax">
+<h3>🧊 Intelligens fűtés</h3>
+<p>Csendes ventilátorok biztosítják a friss és hűvös alvási környezetet.</p>
+</div>
+
+<div class="card feny">
+<h3>💡 Állitható magasság</h3>
+<p>Mágneses rendszerrel könnyedén személyre szabható a párna magassága.</p>
+</div>
+
+</div>
+
+
+<section id="osszehasonlitas">
+
+<div class="table">
+  <h2 class="tablas">Összehasonlítás</h2>
+  <table class="table-striped thead-dark osszehasonlitas">
+    
+
+    <thead>
+      <tr>
+        <th>Szempontók</th>
+        <th>Normál párna</th>
+        <th>DreamSmartX</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Alvásfigyelés</td>
+        <td>Nincs</td>
+        <td>Szenzorok figyelik azt</td>
+      </tr>
+      <tr>
+        <td>Horkolásérzékelés</td>
+        <td>Nem segít</td>
+        <td>Automatikusan reagál</td>
+      </tr>
+      <tr>
+        <td>Testhelyzetének állitása</td>
+        <td>Fix</td>
+        <td>Állitható</td>
+      </tr>
+      <tr>
+        <td>Mobil alkalmazás</td>
+        <td>Nincs</td>
+        <td>Telefonról irányithato</td>
+      </tr>
+      <tr>
+        <td>Nyugtató hangokk</td>
+        <td>Nincs</td>
+        <td>Beépített hangok</td>
+      </tr>
+      <tr>
+        <td>Ébresztés</td>
+        <td>Normál</td>
+        <td>Okos</td>
+      </tr>
+      <tr>
+        <td>Kényelem</td>
+        <td>alap</td>
+        <td>Magas</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
+
+</section>
+
+
+</section>
+  
+<section id="rendeles">
+<div class="order">
+<h2>Rendeld meg most!</h2>
+<p>Tapasztald meg a pihentető alvás új generációját.</p>
+<a href="rendelés.html"><button>Rendelés</button></a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 DreamSmartX – A jövő alvása</p>
+</footer>
+
+
+
+</body>
+</html>
