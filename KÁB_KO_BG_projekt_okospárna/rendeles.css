@@ -8,7 +8,7 @@ body{
     margin:auto;
     background-size: 1em;
     font-family: "Segoe UI", Arial, sans-serif;
-    background: beige;
+    background: rgb(109, 109, 107);
     background-size: 400% 400%;
     animation: gradientMove 12s ease infinite;
 }
@@ -23,7 +23,7 @@ body{
 
 h3{
     padding: 50px;
-    color: beige;
+    color: rgb(109, 109, 107);
 }
 
 .navbar{
@@ -55,7 +55,7 @@ h3{
 .nav-links a{
     position: relative;
     margin-left: auto;
-    color: black;
+    color: white;
     font-size: 30px;
     font-weight: 500;
     text-decoration: none;
@@ -122,7 +122,7 @@ h3{
     gap: 12px;
 }
 .logo span{
-    color:black;
+    color:white;
     font-size:22px;
     font-weight:600;
     letter-spacing:1px;
@@ -216,15 +216,14 @@ section{
 }
 button{
     margin-top:30px;
-    padding:12px 30px;
     border:none;
-    border-radius:25px;
+    border-radius:20px;
     background:blue;
     color:white;
     font-size:30px;
     cursor:pointer;
     margin-left: 500px;
-    padding: 30px;
+    padding: 10px;
 }
 
 button:hover{
@@ -270,6 +269,7 @@ input, select{
 .urlapreszek{
     margin-bottom: 50px;
     cursor: pointer;
+    color: white;
 }
 
 #rendelesfocim{
