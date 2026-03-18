@@ -55,7 +55,7 @@ h3{
 .nav-links a{
     position: relative;
     margin-left: auto;
-    color: white;
+    color: darkgrey;
     font-size: 30px;
     font-weight: 500;
     text-decoration: none;
@@ -78,7 +78,7 @@ h3{
 }
 
 .nav-links a:hover{
-    color:blue;
+    color:white;
 }
 .nav-links a:hover::after{
     width:100%;
